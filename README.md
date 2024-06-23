@@ -68,33 +68,36 @@ Bu tablo, IP adreslerinin sınıflarını ve her sınıfın özelliklerini göst
 | D     | 224.0.0.0        | 239.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Multicast              |
 | E     | 240.0.0.0        | 255.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Deneysel, araştırma    |
 
-#### Açıklama
-
-- **Sınıf A:** Büyük ağlar için kullanılır. İlk oktet (0-127) ağ adresini belirtir.
-- **Sınıf B:** Orta büyüklükteki ağlar için kullanılır. İlk iki oktet (128-191) ağ adresini belirtir.
-- **Sınıf C:** Küçük ağlar için kullanılır. İlk üç oktet (192-223) ağ adresini belirtir.
-- **Sınıf D:** Multicast adresleme için kullanılır. Ağ adresleme için kullanılmaz.
-- **Sınıf E:** Deneysel amaçlar için ayrılmıştır. Ağ adresleme için kullanılmaz.
-
 IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır. Bu sınıflar, ağın büyüklüğüne ve kullanım amacına göre farklılık gösterir. A, B ve C sınıfları, farklı büyüklükteki ağlar için uygundur, D sınıfı multicast için kullanılırken, E sınıfı ise deneysel amaçlar için ayrılmıştır.
 
-### IP Adresi Örnekleri:
-- #### A Sınıfı IP Adresi Örneği
+### Açıklama:
+
+- #### A Sınıfı IP Adresi
+  - Büyük ağlar için kullanılır. İlk oktet (0-127) ağ adresini belirtir.
   - **Örnek Adres:** 10.0.0.1
   - **Açıklama:** 10.0.0.1, A sınıfı bir IP adresidir. A sınıfı IP adresleri, büyük ağlarda kullanılır ve geniş bir adres aralığına sahiptir. İlk oktet (10), ağ adresini belirtir, geri kalan üç oktet (0.0.1) ise host adresini belirtir.
+  - **Kullanılabilir Aralık:** 1.0.0.0 - 126.255.255.255
 
-- #### B Sınıfı IP Adresi Örneği
+- #### B Sınıfı IP Adresi
+  - Orta büyüklükteki ağlar için kullanılır. İlk iki oktet (128-191) ağ adresini belirtir.
   - **Örnek Adres:** 172.16.0.1
   - **Açıklama:** 172.16.0.1, B sınıfı bir IP adresidir. B sınıfı IP adresleri, orta büyüklükteki ağlarda kullanılır. İlk iki oktet (172.16) ağ adresini, geri kalan iki oktet (0.1) ise host adresini belirtir.
+  - **Kullanılabilir Aralık:** 128.0.0.0 - 191.255.255.255
 
-- #### C Sınıfı IP Adresi Örneği
+- #### C Sınıfı IP Adresi
+  - Küçük ağlar için kullanılır. İlk üç oktet (192-223) ağ adresini belirtir.
   - **Örnek Adres:** 192.168.1.1
   - **Açıklama:** 192.168.1.1, C sınıfı bir IP adresidir. C sınıfı IP adresleri, küçük ağlarda kullanılır. İlk üç oktet (192.168.1) ağ adresini, son oktet (1) ise host adresini belirtir.
+  - **Kullanılabilir Aralık:** 192.0.0.0 - 223.255.255.255
 
-- #### D Sınıfı IP Adresi Örneği
+- #### D Sınıfı IP Adresi
+  - Multicast adresleme için kullanılır. Ağ adresleme için kullanılmaz.
   - **Örnek Adres:** 224.0.0.1
   - **Açıklama:** 224.0.0.1, D sınıfı bir IP adresidir. D sınıfı IP adresleri, multicast iletişimde kullanılır. Bu adresler, ağ üzerindeki belirli cihaz gruplarına veri göndermek için kullanılır.
+  - **Aralık:** 224.0.0.0 - 239.255.255.255
 
-- #### E Sınıfı IP Adresi Örneği
+- #### E Sınıfı IP Adresi
+  - Deneysel amaçlar için ayrılmıştır. Ağ adresleme için kullanılmaz.
   - **Örnek Adres:** 240.0.0.1
   - **Açıklama:** 240.0.0.1, E sınıfı bir IP adresidir. E sınıfı IP adresleri, deneysel ve araştırma amaçlı kullanılır. Bu adresler, genellikle özel amaçlar için ayrılmıştır ve normal ağ iletişiminde kullanılmaz.
+  - **Aralık:** 240.0.0.0 - 255.255.255.255
