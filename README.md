@@ -78,3 +78,23 @@ Bu tablo, IP adreslerinin sınıflarını ve her sınıfın özelliklerini göst
 
 IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır. Bu sınıflar, ağın büyüklüğüne ve kullanım amacına göre farklılık gösterir. A, B ve C sınıfları, farklı büyüklükteki ağlar için uygundur, D sınıfı multicast için kullanılırken, E sınıfı ise deneysel amaçlar için ayrılmıştır.
 
+### IP Adresi Örnekleri:
+- #### A Sınıfı IP Adresi Örneği
+  - **Örnek Adres:** 10.0.0.1
+  - **Açıklama:** 10.0.0.1, A sınıfı bir IP adresidir. A sınıfı IP adresleri, büyük ağlarda kullanılır ve geniş bir adres aralığına sahiptir. İlk oktet (10), ağ adresini belirtir, geri kalan üç oktet (0.0.1) ise host adresini belirtir.
+
+- #### B Sınıfı IP Adresi Örneği
+  - **Örnek Adres:** 172.16.0.1
+  - **Açıklama:** 172.16.0.1, B sınıfı bir IP adresidir. B sınıfı IP adresleri, orta büyüklükteki ağlarda kullanılır. İlk iki oktet (172.16) ağ adresini, geri kalan iki oktet (0.1) ise host adresini belirtir.
+
+- #### C Sınıfı IP Adresi Örneği
+  - **Örnek Adres:** 192.168.1.1
+  - **Açıklama:** 192.168.1.1, C sınıfı bir IP adresidir. C sınıfı IP adresleri, küçük ağlarda kullanılır. İlk üç oktet (192.168.1) ağ adresini, son oktet (1) ise host adresini belirtir.
+
+- #### D Sınıfı IP Adresi Örneği
+  - **Örnek Adres:** 224.0.0.1
+  - **Açıklama:** 224.0.0.1, D sınıfı bir IP adresidir. D sınıfı IP adresleri, multicast iletişimde kullanılır. Bu adresler, ağ üzerindeki belirli cihaz gruplarına veri göndermek için kullanılır.
+
+- #### E Sınıfı IP Adresi Örneği
+  - **Örnek Adres:** 240.0.0.1
+  - **Açıklama:** 240.0.0.1, E sınıfı bir IP adresidir. E sınıfı IP adresleri, deneysel ve araştırma amaçlı kullanılır. Bu adresler, genellikle özel amaçlar için ayrılmıştır ve normal ağ iletişiminde kullanılmaz.
