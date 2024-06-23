@@ -54,3 +54,27 @@ IPv6, IPv4'ün sınırlamalarını aşmak ve internetin büyüyen ihtiyaçların
 | **Adres Tükenmesi**     | Sınırlı ve tükenmiş                       | Çok geniş alan, tükenme sorunu yok        |
 | **Başlık Yapısı**       | Daha basit ve daha az bilgi içerir        | Daha karmaşık, daha fazla bilgi içerir; optimize edilmiştir |
 | **Otomatik Konfigürasyon** | DHCP                                   | SLAAC ve DHCPv6                           |
+
+
+### <div align="center"> IP Adres Sınıfları
+
+Bu tablo, IP adreslerinin sınıflarını ve her sınıfın özelliklerini göstermektedir.
+
+| Sınıf | Başlangıç Adresi | Bitiş Adresi   | Alt Ağ Maskesi       | Ağ Sayısı  | Her Ağda Maksimum Host Sayısı | Kullanım Alanı         |
+|-------|------------------|----------------|----------------------|------------|-------------------------------|------------------------|
+| A     | 0.0.0.0          | 127.255.255.255| 255.0.0.0 (/8)       | 128        | 16,777,214                    | Büyük ağlar            |
+| B     | 128.0.0.0        | 191.255.255.255| 255.255.0.0 (/16)    | 16,384     | 65,534                        | Orta büyüklükte ağlar   |
+| C     | 192.0.0.0        | 223.255.255.255| 255.255.255.0 (/24)  | 2,097,152  | 254                           | Küçük ağlar            |
+| D     | 224.0.0.0        | 239.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Multicast              |
+| E     | 240.0.0.0        | 255.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Deneysel, araştırma    |
+
+#### Açıklama
+
+- **Sınıf A:** Büyük ağlar için kullanılır. İlk oktet (0-127) ağ adresini belirtir.
+- **Sınıf B:** Orta büyüklükteki ağlar için kullanılır. İlk iki oktet (128-191) ağ adresini belirtir.
+- **Sınıf C:** Küçük ağlar için kullanılır. İlk üç oktet (192-223) ağ adresini belirtir.
+- **Sınıf D:** Multicast adresleme için kullanılır. Ağ adresleme için kullanılmaz.
+- **Sınıf E:** Deneysel amaçlar için ayrılmıştır. Ağ adresleme için kullanılmaz.
+
+IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır. Bu sınıflar, ağın büyüklüğüne ve kullanım amacına göre farklılık gösterir. A, B ve C sınıfları, farklı büyüklükteki ağlar için uygundur, D sınıfı multicast için kullanılırken, E sınıfı ise deneysel amaçlar için ayrılmıştır.
+
