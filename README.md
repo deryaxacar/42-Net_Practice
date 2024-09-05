@@ -1,6 +1,6 @@
 # İçindekiler
 
-- [Binary (İkili) Sayı Sistemi](#binary-ikili-sayı-sistemi)
+- [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
    - [Tablo](#tablo)
    - [Açıklama](#açıklama)
 - [IP Adresleri: IPv4 ve IPv6](#ip-adresleri-ipv4-ve-ipv6)
@@ -22,7 +22,7 @@
 - [Örnek Hesaplamalar](#örnek-hesaplamalar)
 
 
-<h2 align="center"> Binary (İkili) Sayı Sistemi</h2>
+<h2 align="center">Binary (İkili) Sayı Sistemi</h2>
 
 Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondalık karşılıklarını göstermektedir.
 
