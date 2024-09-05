@@ -1,3 +1,5 @@
+---
+
 ### İçindekiler
 
 - [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
@@ -21,6 +23,7 @@
    - [Wildcard Maskesi](#wildcard-maskesi)
 - [Örnek Hesaplamalar](#örnek-hesaplamalar)
 
+---
 
 <h2 id="binary-ikili-sayi-sistemi" align="center">Binary (İkili) Sayı Sistemi</h2>
 
