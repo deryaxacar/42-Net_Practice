@@ -264,7 +264,7 @@ Wildcard maskesi, alt ağ maskesinin tersidir ve genellikle ACL (Access Control 
 
 ---
 
-### <div align="center"> Örnek Hesaplamalar
+### Örnek Hesaplamalar
 
 **Ağ:** 192.168.1.0/24  
 - Alt Ağ Maskesi: 255.255.255.0
