@@ -1,3 +1,26 @@
+# İçindekiler
+
+- [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
+   - [Tablo](#tablo)
+   - [Açıklama](#açıklama)
+- [IP Adresleri: IPv4 ve IPv6](#ip-adresleri-ipv4-ve-ipv6)
+   - [IPv4 ve IPv6 Formatları](#ipv4-ve-ipv6-formatları)
+   - [IPv4 ve IPv6 Karşılaştırması](#ipv4-ve-ipv6-karşılaştırması)
+- [IP Adres Sınıfları](#ip-adres-sınıfları)
+   - [A Sınıfı IP Adresi](#a-sınıfı-ip-adresi)
+   - [B Sınıfı IP Adresi](#b-sınıfı-ip-adresi)
+   - [C Sınıfı IP Adresi](#c-sınıfı-ip-adresi)
+   - [D Sınıfı IP Adresi](#d-sınıfı-ip-adresi)
+   - [E Sınıfı IP Adresi](#e-sınıfı-ip-adresi)
+- [IP Adres Sınıfları ve Hesaplamaları](#ip-adres-sınıfları-ve-hesaplamaları)
+- [IP Hesaplamaları](#ip-hesaplamaları)
+   - [Alt Ağ (Subnet) Hesaplaması](#alt-ağ-subnet-hesaplaması)
+   - [Alt Ağ Maskesi](#alt-ağ-maskesi)
+   - [CIDR Notasyonu](#cidr-notasyonu)
+   - [Kullanılabilir IP Sayısı Hesaplaması](#kullanılabilir-ip-sayısı-hesaplaması)
+   - [Wildcard Maskesi](#wildcard-maskesi)
+- [Örnek Hesaplamalar](#örnek-hesaplamalar)
+
 
 ### <div align="center"> Binary (İkili) Sayı Sistemi
 
