@@ -1,7 +1,6 @@
 # İçindekiler
 
 - [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
-   - [Tablo](#tablo)
    - [Açıklama](#açıklama)
 - [IP Adresleri: IPv4 ve IPv6](#ip-adresleri-ipv4-ve-ipv6)
    - [IPv4 ve IPv6 Formatları](#ipv4-ve-ipv6-formatları)
@@ -22,7 +21,7 @@
 - [Örnek Hesaplamalar](#örnek-hesaplamalar)
 
 
-<h2 align="center">Binary (İkili) Sayı Sistemi</h2>
+<h2 id="binary-ikili-sayi-sistemi" align="center">Binary (İkili) Sayı Sistemi</h2>
 
 Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondalık karşılıklarını göstermektedir.
 
@@ -118,12 +117,12 @@ Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondal�
 
 ---
 
-## <div align="center"> IP Adresleri: IPv4 ve IPv6
+## <div align="center">IP Adresleri: IPv4 ve IPv6
 IPv6, IPv4'ün sınırlamalarını aşmak ve internetin büyüyen ihtiyaçlarını karşılamak için geliştirilmiştir. Özellikle IoT (Internet of Things) gibi uygulamaların artışıyla, IPv6'nın önemi daha da belirginleşmiştir.
 
 ---
 
-#### <div align="center"> IPv4 ve IPv6 Formatları
+#### <div align="center">IPv4 ve IPv6 Formatları
 
 | Özellik                | IPv4                                        | IPv6                                                   |
 |------------------------|---------------------------------------------|--------------------------------------------------------|
@@ -134,7 +133,7 @@ IPv6, IPv4'ün sınırlamalarını aşmak ve internetin büyüyen ihtiyaçların
 
 ---
 
-#### <div align="center"> IPv4 ve IPv6 Karşılaştırması
+#### <div align="center">IPv4 ve IPv6 Karşılaştırması
 
 | Özellik                 | IPv4                                      | IPv6                                      |
 |-------------------------|-------------------------------------------|-------------------------------------------|
@@ -149,7 +148,7 @@ IPv6, IPv4'ün sınırlamalarını aşmak ve internetin büyüyen ihtiyaçların
 
 ---
 
-### <div align="center"> IP Adres Sınıfları
+### <div align="center">IP Adres Sınıfları
 
 Bu tablo, IP adreslerinin sınıflarını ve her sınıfın özelliklerini göstermektedir.
 
@@ -172,8 +171,6 @@ IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır.
   - **Kullanılabilir Aralık:** 1.0.0.0 - 126.255.255.255
 
      <img src="https://i.hizliresim.com/610q84w.PNG" alt="IP Address Example" width="650" height="350">
-
-
 
 - #### B Sınıfı IP Adresi
   - Orta büyüklükteki ağlar için kullanılır. İlk iki oktet (128-191) ağ adresini belirtir.
@@ -209,7 +206,7 @@ IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır.
 
   ---
 
-### <div align="center"> IP Adres Sınıfları ve Hesaplamaları
+### <div align="center">IP Adres Sınıfları ve Hesaplamaları
 
 IP adresleri, ağların büyüklüğüne ve kullanımına göre sınıflandırılmıştır. Her sınıfın farklı adres aralıkları, alt ağ maskeleri ve hesaplama yöntemleri bulunur.
 
@@ -223,9 +220,9 @@ IP adresleri, ağların büyüklüğüne ve kullanımına göre sınıflandırı
 
 ---
 
-### <div align="center"> IP Hesaplamaları
+### <div align="center">IP Hesaplamaları
 
-#### 1. **Alt Ağ (Subnet) Hesaplaması**
+#### **Alt Ağ (Subnet) Hesaplaması**
 Alt ağlar, bir IP adresi blokunu daha küçük ağlara bölmek için kullanılır. Subnetting yapıldığında ağ ID'si ve host ID'si belirlenir. 
 
 **Örnek:**  
@@ -235,20 +232,20 @@ Bir ağ 192.168.1.0/24 IP bloğunu kullanıyorsa:
 - Son IP Adresi (Broadcast): 192.168.1.255
 - Kullanılabilir IP aralığı: 192.168.1.1 - 192.168.1.254 (Toplam 254 host)
 
-#### 2. **Alt Ağ Maskesi**
+#### **Alt Ağ Maskesi**
 Alt ağ maskesi, ağın ve host kısmını ayırt etmek için kullanılır. CIDR notasyonu (/24, /16 vb.) bu maskeyi belirtir.
 
 **Örnek:**
 - **/24** Alt ağ maskesi: 255.255.255.0 
 - **/16** Alt ağ maskesi: 255.255.0.0
 
-#### 3. **CIDR Notasyonu**
+#### **CIDR Notasyonu**
 CIDR (Classless Inter-Domain Routing), IP adreslerini ve alt ağları daha esnek bir şekilde belirtir.
 
 **Örnek:**  
 192.168.1.0/24, 256 IP adresini temsil eder ve alt ağ maskesi 255.255.255.0'dır.
 
-#### 4. **Kullanılabilir IP Sayısı Hesaplaması**
+#### **Kullanılabilir IP Sayısı Hesaplaması**
 Herhangi bir alt ağda kullanılabilir IP adresi sayısı şu formülle hesaplanır:  
 `Kullanılabilir IP = 2^(32 - CIDR) - 2`
 
@@ -256,7 +253,7 @@ Herhangi bir alt ağda kullanılabilir IP adresi sayısı şu formülle hesaplan
 - /24 için: 2^(32 - 24) - 2 = 256 - 2 = 254 kullanılabilir IP
 - /16 için: 2^(32 - 16) - 2 = 65,536 - 2 = 65,534 kullanılabilir IP
 
-#### 5. **Wildcard Maskesi**
+#### **Wildcard Maskesi**
 Wildcard maskesi, alt ağ maskesinin tersidir ve genellikle ACL (Access Control List) gibi güvenlik kurallarında kullanılır.
 
 **Örnek:**
