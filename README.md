@@ -1,6 +1,7 @@
 # İçindekiler
 
 - [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
+   - [Tablo](#table)
    - [Açıklama](#açıklama)
 - [IP Adresleri: IPv4 ve IPv6](#ip-adresleri-ipv4-ve-ipv6)
    - [IPv4 ve IPv6 Formatları](#ipv4-ve-ipv6-formatları)
@@ -27,7 +28,7 @@ Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondal�
 
 ---
 
-<div align="center">
+<div align="center" id="table">
   <table>
     <tr>
       <th>Bit</th>
