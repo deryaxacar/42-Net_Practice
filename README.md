@@ -1,4 +1,4 @@
-# İçindekiler
+### İçindekiler
 
 - [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
    - [Tablo](#table)
