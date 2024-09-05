@@ -3,19 +3,84 @@
 
 Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondalık karşılıklarını göstermektedir.
 
-| Bit | Binary (İkili) | Üstel (Exponential) | Ondalık (Decimal) |
-|-----|----------------|---------------------|-------------------|
-| 0   | 0000           | 2^0                 | 0                 |
-| 1   | 0001           | 2^0                 | 1                 |
-| 2   | 0010           | 2^1                 | 2                 |
-| 3   | 0011           | 2^1 + 2^0           | 3                 |
-| 4   | 0100           | 2^2                 | 4                 |
-| 5   | 0101           | 2^2 + 2^0           | 5                 |
-| 6   | 0110           | 2^2 + 2^1           | 6                 |
-| 7   | 0111           | 2^2 + 2^1 + 2^0     | 7                 |
-| 8   | 1000           | 2^3                 | 8                 |
-| 9   | 1001           | 2^3 + 2^0           | 9                 |
-| 10  | 1010           | 2^3 + 2^1           | 10                |
+---
+
+<div align="center">
+  <table>
+    <tr>
+      <th>Bit</th>
+      <th>Binary (İkili)</th>
+      <th>Üstel (Exponential)</th>
+      <th>Ondalık (Decimal)</th>
+      <th>Bit</th>
+      <th>Binary (İkili)</th>
+      <th>Üstel (Exponential)</th>
+      <th>Ondalık (Decimal)</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0000</td>
+      <td>2^0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0110</td>
+      <td>2^2 + 2^1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0001</td>
+      <td>2^0</td>
+      <td>1</td>
+      <td>7</td>
+      <td>0111</td>
+      <td>2^2 + 2^1 + 2^0</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0010</td>
+      <td>2^1</td>
+      <td>2</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>2^3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0011</td>
+      <td>2^1 + 2^0</td>
+      <td>3</td>
+      <td>9</td>
+      <td>1001</td>
+      <td>2^3 + 2^0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0100</td>
+      <td>2^2</td>
+      <td>4</td>
+      <td>10</td>
+      <td>1010</td>
+      <td>2^3 + 2^1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0101</td>
+      <td>2^2 + 2^0</td>
+      <td>5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+
+---
 
 #### Açıklama
 
@@ -28,6 +93,7 @@ Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondal�
 
 Örneğin, ondalık 5 sayısı ikili sistemde 0101 olarak yazılır. Bu, 2^2 + 2^0 (4 + 1) olarak hesaplanır ve ondalık sistemde 5'e eşittir. Bu sistem, dijital elektronik ve bilgisayar bilimlerinde yaygın olarak kullanılır.
 
+---
 
 ## <div align="center"> IP Adresleri: IPv4 ve IPv6
 IPv6, IPv4'ün sınırlamalarını aşmak ve internetin büyüyen ihtiyaçlarını karşılamak için geliştirilmiştir. Özellikle IoT (Internet of Things) gibi uygulamaların artışıyla, IPv6'nın önemi daha da belirginleşmiştir.
