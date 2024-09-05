@@ -78,11 +78,17 @@ IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır.
   - **Açıklama:** 10.0.0.1, A sınıfı bir IP adresidir. A sınıfı IP adresleri, büyük ağlarda kullanılır ve geniş bir adres aralığına sahiptir. İlk oktet (10), ağ adresini belirtir, geri kalan üç oktet (0.0.1) ise host adresini belirtir.
   - **Kullanılabilir Aralık:** 1.0.0.0 - 126.255.255.255
 
+     <img src="https://i.hizliresim.com/610q84w.PNG" alt="IP Address Example" width="650" height="350">
+
+
+
 - #### B Sınıfı IP Adresi
   - Orta büyüklükteki ağlar için kullanılır. İlk iki oktet (128-191) ağ adresini belirtir.
   - **Örnek Adres:** 172.16.0.1
   - **Açıklama:** 172.16.0.1, B sınıfı bir IP adresidir. B sınıfı IP adresleri, orta büyüklükteki ağlarda kullanılır. İlk iki oktet (172.16) ağ adresini, geri kalan iki oktet (0.1) ise host adresini belirtir.
   - **Kullanılabilir Aralık:** 128.0.0.0 - 191.255.255.255
+
+      <img src="https://i.hizliresim.com/ggovdpf.PNG" alt="IP Address Example" width="650" height="350">
 
 - #### C Sınıfı IP Adresi
   - Küçük ağlar için kullanılır. İlk üç oktet (192-223) ağ adresini belirtir.
@@ -90,14 +96,21 @@ IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır.
   - **Açıklama:** 192.168.1.1, C sınıfı bir IP adresidir. C sınıfı IP adresleri, küçük ağlarda kullanılır. İlk üç oktet (192.168.1) ağ adresini, son oktet (1) ise host adresini belirtir.
   - **Kullanılabilir Aralık:** 192.0.0.0 - 223.255.255.255
 
+      <img src="https://i.hizliresim.com/slfe9pz.PNG" alt="IP Address Example" width="650" height="350">
+
 - #### D Sınıfı IP Adresi
   - Multicast adresleme için kullanılır. Ağ adresleme için kullanılmaz.
   - **Örnek Adres:** 224.0.0.1
   - **Açıklama:** 224.0.0.1, D sınıfı bir IP adresidir. D sınıfı IP adresleri, multicast iletişimde kullanılır. Bu adresler, ağ üzerindeki belirli cihaz gruplarına veri göndermek için kullanılır.
   - **Aralık:** 224.0.0.0 - 239.255.255.255
 
+      <img src="https://i.hizliresim.com/ktzrup7.PNG" alt="IP Address Example" width="650" height="350">
+
 - #### E Sınıfı IP Adresi
   - Deneysel amaçlar için ayrılmıştır. Ağ adresleme için kullanılmaz.
   - **Örnek Adres:** 240.0.0.1
   - **Açıklama:** 240.0.0.1, E sınıfı bir IP adresidir. E sınıfı IP adresleri, deneysel ve araştırma amaçlı kullanılır. Bu adresler, genellikle özel amaçlar için ayrılmıştır ve normal ağ iletişiminde kullanılmaz.
   - **Aralık:** 240.0.0.0 - 255.255.255.255
+
+      <img src="https://i.hizliresim.com/b6huzu3.PNG" alt="IP Address Example" width="650" height="250">
+  
