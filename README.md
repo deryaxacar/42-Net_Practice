@@ -36,6 +36,7 @@
    - [Wildcard Maskesi](#wildcard-maskesi)
 - [Örnek Hesaplamalar](#örnek-hesaplamalar)
 
+
 ---
 
 <h2 id="binary-ikili-sayi-sistemi" align="center">Binary (İkili) Sayı Sistemi</h2>
@@ -294,3 +295,8 @@ Wildcard maskesi, alt ağ maskesinin tersidir ve genellikle ACL (Access Control 
 - Broadcast Adresi: 10.255.255.255
 - Toplam Host Sayısı: 16,777,214
 
+---
+
+![img](https://i.hizliresim.com/kbk2yeg.png?_gl=1*qn6t0t*_ga*MTAwMTQwODg1OC4xNzMwMzk5MjI4*_ga_M9ZRXYS2YN*MTczMDM5OTIyNy4xLjEuMTczMDM5OTI0MS40Ni4wLjA.)
+
+---
