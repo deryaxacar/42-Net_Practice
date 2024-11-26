@@ -1,13 +1,13 @@
 <h1 align="center">42 - Net_Practice 🌐</h1>
 
-<!-- Proje Açıklaması -->
-<p align="center">
-  Net_Practice, 42 Network Bootcamp'inin bir parçası olarak geliştirilmiş bir proje olup, ağ programlama ve ağ protokollerini anlamak için tasarlanmıştır. Bu proje, ağ yapılandırmaları, iletişim protokolleri ve veri paketleme gibi temel konuları kapsamlı bir şekilde ele alır. Net_Practice, kullanıcıların ağ uygulamalarını oluşturma ve mevcut ağların performansını değerlendirme becerilerini geliştirmelerine olanak tanır. Hem teorik bilgi hem de uygulamalı deneyim sunan bu proje, ağ teknolojilerine derinlemesine bir bakış sağlar.
-</p>
-
 <!-- Proje Logosu veya Görseli -->
 <p align="center">
   <a target="blank"><img src="https://i.hizliresim.com/kxgq44e.png" height="150" width="150" /></a>
+</p>
+
+<!-- Proje Açıklaması -->
+<p align="center">
+  Net_Practice, 42 Network Bootcamp'inin bir parçası olarak geliştirilmiş bir proje olup, ağ programlama ve ağ protokollerini anlamak için tasarlanmıştır. Bu proje, ağ yapılandırmaları, iletişim protokolleri ve veri paketleme gibi temel konuları kapsamlı bir şekilde ele alır. Net_Practice, kullanıcıların ağ uygulamalarını oluşturma ve mevcut ağların performansını değerlendirme becerilerini geliştirmelerine olanak tanır. Hem teorik bilgi hem de uygulamalı deneyim sunan bu proje, ağ teknolojilerine derinlemesine bir bakış sağlar.
 </p>
 
 
