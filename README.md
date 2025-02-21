@@ -298,3 +298,6 @@ Wildcard maskesi, alt ağ maskesinin tersidir ve genellikle ACL (Access Control 
 - Broadcast Adresi: 10.255.255.255
 - Toplam Host Sayısı: 16,777,214
 
+---
+
+<p align="center">© 2025 This project was created by Derya ACAR.</p>
