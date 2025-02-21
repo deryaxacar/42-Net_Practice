@@ -300,4 +300,4 @@ Wildcard maskesi, alt ağ maskesinin tersidir ve genellikle ACL (Access Control 
 
 ---
 
-<p align="center">© 2025 This project was created by Derya ACAR.</p> sss
+<p align="center">© 2025 This project was created by Derya ACAR.</p>
