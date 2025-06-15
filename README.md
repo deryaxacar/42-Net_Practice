@@ -38,7 +38,7 @@
 
 ---
 
-![img](https://i.hizliresim.com/kbk2yeg.png?_gl=1*qn6t0t*_ga*MTAwMTQwODg1OC4xNzMwMzk5MjI4*_ga_M9ZRXYS2YN*MTczMDM5OTIyNy4xLjEuMTczMDM5OTI0MS40Ni4wLjA.)
+![img](https://github.com/deryaxacar/42-Net_Practice/blob/main/ipsubnetting.png)
 
 ---
 
