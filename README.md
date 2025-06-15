@@ -1,40 +1,39 @@
 <h1 align="center">42 - Net_Practice 🌐</h1>
 
-<!-- Proje Logosu veya Görseli -->
+<!-- Project Logo or Image -->
 <p align="center">
   <a target="blank"><img src="https://github.com/deryaxacar/42-Net_Practice/blob/main/netpractice.png" height="150" width="150" /></a>
 </p>
 
-<!-- Proje Açıklaması -->
+<!-- Project Description -->
 <p align="center">
-  Net_Practice, 42 Network Bootcamp'inin bir parçası olarak geliştirilmiş bir proje olup, ağ programlama ve ağ protokollerini anlamak için tasarlanmıştır. Bu proje, ağ yapılandırmaları, iletişim protokolleri ve veri paketleme gibi temel konuları kapsamlı bir şekilde ele alır. Net_Practice, kullanıcıların ağ uygulamalarını oluşturma ve mevcut ağların performansını değerlendirme becerilerini geliştirmelerine olanak tanır. Hem teorik bilgi hem de uygulamalı deneyim sunan bu proje, ağ teknolojilerine derinlemesine bir bakış sağlar.
+  Net_Practice is a project developed as part of the 42 Network Bootcamp, designed to understand network programming and network protocols. This project comprehensively covers fundamental topics such as network configurations, communication protocols, and data encapsulation. Net_Practice enables users to develop network applications and evaluate the performance of existing networks. Offering both theoretical knowledge and practical experience, this project provides an in-depth look at network technologies.
 </p>
-
 
 ---
 
-### İçindekiler 🔗
+### Table of Contents 🔗
 
-- [Binary (İkili) Sayı Sistemi](#binary-ikili-sayi-sistemi)
-   - [Tablo](#table)
-   - [Açıklama](#açıklama)
-- [IP Adresleri: IPv4 ve IPv6](#ip-adresleri-ipv4-ve-ipv6)
-   - [IPv4 ve IPv6 Formatları](#ipv4-ve-ipv6-formatları)
-   - [IPv4 ve IPv6 Karşılaştırması](#ipv4-ve-ipv6-karşılaştırması)
-- [IP Adres Sınıfları](#ip-adres-sınıfları)
-   - [A Sınıfı IP Adresi](#a-sınıfı-ip-adresi)
-   - [B Sınıfı IP Adresi](#b-sınıfı-ip-adresi)
-   - [C Sınıfı IP Adresi](#c-sınıfı-ip-adresi)
-   - [D Sınıfı IP Adresi](#d-sınıfı-ip-adresi)
-   - [E Sınıfı IP Adresi](#e-sınıfı-ip-adresi)
-- [IP Adres Sınıfları ve Hesaplamaları](#ip-adres-sınıfları-ve-hesaplamaları)
-- [IP Hesaplamaları](#ip-hesaplamaları)
-   - [Alt Ağ (Subnet) Hesaplaması](#alt-ağ-subnet-hesaplaması)
-   - [Alt Ağ Maskesi](#alt-ağ-maskesi)
-   - [CIDR Notasyonu](#cidr-notasyonu)
-   - [Kullanılabilir IP Sayısı Hesaplaması](#kullanılabilir-ip-sayısı-hesaplaması)
-   - [Wildcard Maskesi](#wildcard-maskesi)
-- [Örnek Hesaplamalar](#örnek-hesaplamalar)
+- [Binary Number System](#binary-number-system)
+   - [Table](#table)
+   - [Explanation](#explanation)
+- [IP Addresses: IPv4 and IPv6](#ip-addresses-ipv4-and-ipv6)
+   - [IPv4 and IPv6 Formats](#ipv4-and-ipv6-formats)
+   - [IPv4 vs IPv6 Comparison](#ipv4-vs-ipv6-comparison)
+- [IP Address Classes](#ip-address-classes)
+   - [Class A IP Address](#class-a-ip-address)
+   - [Class B IP Address](#class-b-ip-address)
+   - [Class C IP Address](#class-c-ip-address)
+   - [Class D IP Address](#class-d-ip-address)
+   - [Class E IP Address](#class-e-ip-address)
+- [IP Address Classes and Calculations](#ip-address-classes-and-calculations)
+- [IP Calculations](#ip-calculations)
+   - [Subnet Calculation](#subnet-calculation)
+   - [Subnet Mask](#subnet-mask)
+   - [CIDR Notation](#cidr-notation)
+   - [Usable IP Count Calculation](#usable-ip-count-calculation)
+   - [Wildcard Mask](#wildcard-mask)
+- [Example Calculations](#example-calculations)
 
 ---
 
@@ -42,9 +41,9 @@
 
 ---
 
-<h2 id="binary-ikili-sayi-sistemi" align="center">Binary (İkili) Sayı Sistemi</h2>
+<h2 id="binary-number-system" align="center">Binary Number System</h2>
 
-Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondalık karşılıklarını göstermektedir.
+This table shows the bits in the binary number system along with their binary values, exponential powers, and decimal equivalents.
 
 ---
 
@@ -52,13 +51,13 @@ Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondal�
   <table>
     <tr>
       <th>Bit</th>
-      <th>Binary (İkili)</th>
-      <th>Üstel (Exponential)</th>
-      <th>Ondalık (Decimal)</th>
+      <th>Binary</th>
+      <th>Exponential</th>
+      <th>Decimal</th>
       <th>Bit</th>
-      <th>Binary (İkili)</th>
-      <th>Üstel (Exponential)</th>
-      <th>Ondalık (Decimal)</th>
+      <th>Binary</th>
+      <th>Exponential</th>
+      <th>Decimal</th>
     </tr>
     <tr>
       <td>0</td>
@@ -125,168 +124,169 @@ Bu tablo, ikili sayı sistemindeki bitlerin, ikili değerlerin, üstel ve ondal�
 
 ---
 
-#### Açıklama
+#### Explanation
 
-İkili sayı sistemi (binary), sadece iki rakam kullanır: 0 ve 1. Her bit, 2'nin farklı bir kuvvetini temsil eder. Tablo, 0'dan 10'a kadar olan ondalık sayıların ikili (binary) karşılıklarını, her bitin 2'nin kuvvetleri cinsinden değerini ve bunların ondalık sistemdeki karşılıklarını gösterir.
+The binary number system uses only two digits: 0 and 1. Each bit represents a power of 2. The table shows the binary representations of decimal numbers from 0 to 10, how each bit corresponds to powers of 2, and their equivalent values in the decimal system.
 
-- **Bit**: Ondalık (decimal) sistemdeki sayılar.
-- **Binary (İkili)**: Her ondalık sayının ikili (binary) sayı sistemindeki temsili.
-- **Üstel (Exponential)**: İkili sistemde her bitin 2'nin kuvveti olarak nasıl değerlendirildiği.
-- **Ondalık (Decimal)**: İkili sayıların ondalık sistemdeki karşılıkları.
+- **Bit**: The number in the decimal system.
+- **Binary**: The binary representation of each decimal number.
+- **Exponential**: The value of each bit expressed as a power of 2.
+- **Decimal**: The decimal equivalent of the binary value.
 
-Örneğin, ondalık 5 sayısı ikili sistemde 0101 olarak yazılır. Bu, 2^2 + 2^0 (4 + 1) olarak hesaplanır ve ondalık sistemde 5'e eşittir. Bu sistem, dijital elektronik ve bilgisayar bilimlerinde yaygın olarak kullanılır.
-
----
-
-## <div align="center">IP Adresleri: IPv4 ve IPv6
-IPv6, IPv4'ün sınırlamalarını aşmak ve internetin büyüyen ihtiyaçlarını karşılamak için geliştirilmiştir. Özellikle IoT (Internet of Things) gibi uygulamaların artışıyla, IPv6'nın önemi daha da belirginleşmiştir.
+For example, the decimal number 5 is written as 0101 in binary. This is calculated as 2^2 + 2^0 (4 + 1), which equals 5 in the decimal system. This system is widely used in digital electronics and computer science.
 
 ---
 
-#### <div align="center">IPv4 ve IPv6 Formatları
+## <div align="center">IP Addresses: IPv4 and IPv6</div>
 
-| Özellik                | IPv4                                        | IPv6                                                   |
+IPv6 was developed to overcome the limitations of IPv4 and to meet the growing demands of the internet. With the increasing use of applications like IoT (Internet of Things), the importance of IPv6 has become even more evident.
+
+---
+
+#### <div align="center">IPv4 and IPv6 Formats</div>
+
+| Feature                | IPv4                                        | IPv6                                                   |
 |------------------------|---------------------------------------------|--------------------------------------------------------|
-| **Adres Uzunluğu**     | 32 bit                                      | 128 bit                                                |
-| **Adres Yapısı**       | Dört oktet, 0-255 arası değerler            | Sekiz grup, dört haneli hexadecimal (0-FFFF)           |
-| **Temsil**             | Noktalarla ayrılan dört sayı (dotted-decimal notation) | İki nokta üst üste (:) ile ayrılan sekiz grup          |
-| **Örnek Adres**        | 192.168.0.1                                  | 2001:0db8:85a3:0000:0000:8a2e:0370:7334                |
+| **Address Length**     | 32 bits                                     | 128 bits                                               |
+| **Address Structure**  | Four octets, values between 0–255           | Eight groups, four-digit hexadecimal (0–FFFF)          |
+| **Notation**           | Dotted-decimal notation                     | Eight groups separated by colons (:)                   |
+| **Example Address**    | 192.168.0.1                                  | 2001:0db8:85a3:0000:0000:8a2e:0370:7334                |
 
 ---
 
-#### <div align="center">IPv4 ve IPv6 Karşılaştırması
+#### <div align="center">IPv4 vs IPv6 Comparison</div>
 
-| Özellik                 | IPv4                                      | IPv6                                      |
-|-------------------------|-------------------------------------------|-------------------------------------------|
-| **Adres Uzunluğu**      | 32 bit                                    | 128 bit                                   |
-| **Adres Formatı**       | Dört oktet (0-255), noktalarla ayrılmış   | Sekiz grup, dört haneli hexadecimal, iki nokta üst üste (:) ile ayrılmış |
-| **Örnek Adres**         | 192.168.0.1                               | 2001:0db8:85a3:0000:0000:8a2e:0370:7334   |
-| **Adres Kapasitesi**    | Yaklaşık 4.3 milyar adres                 | 340 undecillion (3.4 x 10^38) adres       |
-| **Adres Temsili**       | Ondalık sistem                            | Onaltılık sistem                          |
-| **Adres Tükenmesi**     | Sınırlı ve tükenmiş                       | Çok geniş alan, tükenme sorunu yok        |
-| **Başlık Yapısı**       | Daha basit ve daha az bilgi içerir        | Daha karmaşık, daha fazla bilgi içerir; optimize edilmiştir |
-| **Otomatik Konfigürasyon** | DHCP                                   | SLAAC ve DHCPv6                           |
-
----
-
-### <div align="center">IP Adres Sınıfları
-
-Bu tablo, IP adreslerinin sınıflarını ve her sınıfın özelliklerini göstermektedir.
-
-| Sınıf | Başlangıç Adresi | Bitiş Adresi   | Alt Ağ Maskesi       | Ağ Sayısı  | Her Ağda Maksimum Host Sayısı | Kullanım Alanı         |
-|-------|------------------|----------------|----------------------|------------|-------------------------------|------------------------|
-| A     | 0.0.0.0          | 127.255.255.255| 255.0.0.0 (/8)       | 128        | 16,777,214                    | Büyük ağlar            |
-| B     | 128.0.0.0        | 191.255.255.255| 255.255.0.0 (/16)    | 16,384     | 65,534                        | Orta büyüklükte ağlar   |
-| C     | 192.0.0.0        | 223.255.255.255| 255.255.255.0 (/24)  | 2,097,152  | 254                           | Küçük ağlar            |
-| D     | 224.0.0.0        | 239.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Multicast              |
-| E     | 240.0.0.0        | 255.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Deneysel, araştırma    |
-
-IP adresleri, ağları daha verimli yönetmek için sınıflara ayrılmıştır. Bu sınıflar, ağın büyüklüğüne ve kullanım amacına göre farklılık gösterir. A, B ve C sınıfları, farklı büyüklükteki ağlar için uygundur, D sınıfı multicast için kullanılırken, E sınıfı ise deneysel amaçlar için ayrılmıştır.
-
-### Açıklama:
-
-- #### A Sınıfı IP Adresi
-  - Büyük ağlar için kullanılır. İlk oktet (0-127) ağ adresini belirtir.
-  - **Örnek Adres:** 10.0.0.1
-  - **Açıklama:** 10.0.0.1, A sınıfı bir IP adresidir. A sınıfı IP adresleri, büyük ağlarda kullanılır ve geniş bir adres aralığına sahiptir. İlk oktet (10), ağ adresini belirtir, geri kalan üç oktet (0.0.1) ise host adresini belirtir.
-  - **Kullanılabilir Aralık:** 1.0.0.0 - 126.255.255.255
-
-- #### B Sınıfı IP Adresi
-  - Orta büyüklükteki ağlar için kullanılır. İlk iki oktet (128-191) ağ adresini belirtir.
-  - **Örnek Adres:** 172.16.0.1
-  - **Açıklama:** 172.16.0.1, B sınıfı bir IP adresidir. B sınıfı IP adresleri, orta büyüklükteki ağlarda kullanılır. İlk iki oktet (172.16) ağ adresini, geri kalan iki oktet (0.1) ise host adresini belirtir.
-  - **Kullanılabilir Aralık:** 128.0.0.0 - 191.255.255.255
-
-- #### C Sınıfı IP Adresi
-  - Küçük ağlar için kullanılır. İlk üç oktet (192-223) ağ adresini belirtir.
-  - **Örnek Adres:** 192.168.1.1
-  - **Açıklama:** 192.168.1.1, C sınıfı bir IP adresidir. C sınıfı IP adresleri, küçük ağlarda kullanılır. İlk üç oktet (192.168.1) ağ adresini, son oktet (1) ise host adresini belirtir.
-  - **Kullanılabilir Aralık:** 192.0.0.0 - 223.255.255.255
-
-- #### D Sınıfı IP Adresi
-  - Multicast adresleme için kullanılır. Ağ adresleme için kullanılmaz.
-  - **Örnek Adres:** 224.0.0.1
-  - **Açıklama:** 224.0.0.1, D sınıfı bir IP adresidir. D sınıfı IP adresleri, multicast iletişimde kullanılır. Bu adresler, ağ üzerindeki belirli cihaz gruplarına veri göndermek için kullanılır.
-  - **Aralık:** 224.0.0.0 - 239.255.255.255
-
-- #### E Sınıfı IP Adresi
-  - Deneysel amaçlar için ayrılmıştır. Ağ adresleme için kullanılmaz.
-  - **Örnek Adres:** 240.0.0.1
-  - **Açıklama:** 240.0.0.1, E sınıfı bir IP adresidir. E sınıfı IP adresleri, deneysel ve araştırma amaçlı kullanılır. Bu adresler, genellikle özel amaçlar için ayrılmıştır ve normal ağ iletişiminde kullanılmaz.
-  - **Aralık:** 240.0.0.0 - 255.255.255.255
+| Feature                 | IPv4                                        | IPv6                                        |
+|-------------------------|---------------------------------------------|---------------------------------------------|
+| **Address Length**      | 32 bits                                     | 128 bits                                    |
+| **Address Format**      | Four octets (0–255), separated by dots      | Eight groups, hexadecimal, separated by colons (:) |
+| **Example Address**     | 192.168.0.1                                  | 2001:0db8:85a3:0000:0000:8a2e:0370:7334      |
+| **Address Capacity**    | Approximately 4.3 billion addresses         | 340 undecillion (3.4 x 10^38) addresses      |
+| **Representation**      | Decimal                                     | Hexadecimal                                  |
+| **Address Exhaustion**  | Limited and depleted                        | Vast space, no exhaustion issue              |
+| **Header Structure**    | Simpler, contains less information          | More complex, optimized for performance      |
+| **Auto-Configuration**  | DHCP                                        | SLAAC and DHCPv6                             |
 
 ---
 
-### <div align="center">IP Adres Sınıfları ve Hesaplamaları
+### <div align="center">IP Address Classes</div>
 
-IP adresleri, ağların büyüklüğüne ve kullanımına göre sınıflandırılmıştır. Her sınıfın farklı adres aralıkları, alt ağ maskeleri ve hesaplama yöntemleri bulunur.
+This table shows the classes of IP addresses and their respective characteristics.
 
-| Sınıf | Başlangıç Adresi | Bitiş Adresi   | Alt Ağ Maskesi       | Ağ Sayısı  | Her Ağda Maksimum Host Sayısı | Kullanım Alanı         |
-|-------|------------------|----------------|----------------------|------------|-------------------------------|------------------------|
-| A     | 0.0.0.0          | 127.255.255.255| 255.0.0.0 (/8)       | 128        | 16,777,214                    | Büyük ağlar            |
-| B     | 128.0.0.0        | 191.255.255.255| 255.255.0.0 (/16)    | 16,384     | 65,534                        | Orta büyüklükte ağlar   |
-| C     | 192.0.0.0        | 223.255.255.255| 255.255.255.0 (/24)  | 2,097,152  | 254                           | Küçük ağlar            |
-| D     | 224.0.0.0        | 239.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Multicast              |
-| E     | 240.0.0.0        | 255.255.255.255| Kullanılmaz          | Kullanılmaz| Kullanılmaz                   | Deneysel, araştırma    |
+| Class | Start Address    | End Address      | Subnet Mask           | Number of Networks | Max Hosts per Network | Use Case               |
+|-------|------------------|------------------|------------------------|--------------------|------------------------|------------------------|
+| A     | 0.0.0.0          | 127.255.255.255  | 255.0.0.0 (/8)         | 128                | 16,777,214             | Large networks         |
+| B     | 128.0.0.0        | 191.255.255.255  | 255.255.0.0 (/16)      | 16,384             | 65,534                 | Medium-sized networks  |
+| C     | 192.0.0.0        | 223.255.255.255  | 255.255.255.0 (/24)    | 2,097,152          | 254                    | Small networks         |
+| D     | 224.0.0.0        | 239.255.255.255  | Not used               | Not applicable     | Not applicable         | Multicast              |
+| E     | 240.0.0.0        | 255.255.255.255  | Not used               | Not applicable     | Not applicable         | Experimental, research |
 
----
+IP addresses are categorized into classes to better manage networks. These classes differ based on the size and purpose of the network. Classes A, B, and C are suitable for different network scales, while Class D is used for multicast, and Class E is reserved for experimental use.
 
-### <div align="center">IP Hesaplamaları
+### Explanation:
 
-#### **Alt Ağ (Subnet) Hesaplaması**
-Alt ağlar, bir IP adresi blokunu daha küçük ağlara bölmek için kullanılır. Subnetting yapıldığında ağ ID'si ve host ID'si belirlenir. 
+- #### Class A IP Address
+  - Used for large networks. The first octet (0–127) represents the network portion.
+  - **Example Address:** 10.0.0.1
+  - **Explanation:** 10.0.0.1 is a Class A IP address. Class A is used in large networks with a wide range of addresses. The first octet (10) represents the network part, while the remaining three (0.0.1) are for host identification.
+  - **Usable Range:** 1.0.0.0 – 126.255.255.255
 
-**Örnek:**  
-Bir ağ 192.168.1.0/24 IP bloğunu kullanıyorsa:
-- Alt Ağ Maskesi: 255.255.255.0
-- İlk IP Adresi (Ağ ID'si): 192.168.1.0
-- Son IP Adresi (Broadcast): 192.168.1.255
-- Kullanılabilir IP aralığı: 192.168.1.1 - 192.168.1.254 (Toplam 254 host)
+- #### Class B IP Address
+  - Used for medium-sized networks. The first two octets (128–191) identify the network.
+  - **Example Address:** 172.16.0.1
+  - **Explanation:** 172.16.0.1 is a Class B IP address. Class B is designed for medium-sized networks. The first two octets (172.16) are the network portion, and the remaining two (0.1) are for the host.
+  - **Usable Range:** 128.0.0.0 – 191.255.255.255
 
-#### **Alt Ağ Maskesi**
-Alt ağ maskesi, ağın ve host kısmını ayırt etmek için kullanılır. CIDR notasyonu (/24, /16 vb.) bu maskeyi belirtir.
+- #### Class C IP Address
+  - Used for small networks. The first three octets (192–223) define the network.
+  - **Example Address:** 192.168.1.1
+  - **Explanation:** 192.168.1.1 is a Class C IP address. Class C is intended for small networks. The first three octets (192.168.1) define the network, and the last octet (1) is used for the host.
+  - **Usable Range:** 192.0.0.0 – 223.255.255.255
 
-**Örnek:**
-- **/24** Alt ağ maskesi: 255.255.255.0 
-- **/16** Alt ağ maskesi: 255.255.0.0
+- #### Class D IP Address
+  - Used for multicast addressing. Not used for standard network addressing.
+  - **Example Address:** 224.0.0.1
+  - **Explanation:** 224.0.0.1 is a Class D IP address. Class D is used in multicast communication, allowing data transmission to specific groups of devices on a network.
+  - **Range:** 224.0.0.0 – 239.255.255.255
 
-#### **CIDR Notasyonu**
-CIDR (Classless Inter-Domain Routing), IP adreslerini ve alt ağları daha esnek bir şekilde belirtir.
-
-**Örnek:**  
-192.168.1.0/24, 256 IP adresini temsil eder ve alt ağ maskesi 255.255.255.0'dır.
-
-#### **Kullanılabilir IP Sayısı Hesaplaması**
-Herhangi bir alt ağda kullanılabilir IP adresi sayısı şu formülle hesaplanır:  
-`Kullanılabilir IP = 2^(32 - CIDR) - 2`
-
-**Örnek:**
-- /24 için: 2^(32 - 24) - 2 = 256 - 2 = 254 kullanılabilir IP
-- /16 için: 2^(32 - 16) - 2 = 65,536 - 2 = 65,534 kullanılabilir IP
-
-#### **Wildcard Maskesi**
-Wildcard maskesi, alt ağ maskesinin tersidir ve genellikle ACL (Access Control List) gibi güvenlik kurallarında kullanılır.
-
-**Örnek:**
-- Alt ağ maskesi 255.255.255.0 için wildcard maskesi: 0.0.0.255
+- #### Class E IP Address
+  - Reserved for experimental purposes. Not used in standard network addressing.
+  - **Example Address:** 240.0.0.1
+  - **Explanation:** 240.0.0.1 is a Class E IP address. These addresses are used for research and experimental purposes and are not intended for general use in public networks.
+  - **Range:** 240.0.0.0 – 255.255.255.255
 
 ---
 
-### Örnek Hesaplamalar
+### <div align="center">IP Address Classes and Calculations</div>
 
-**Ağ:** 192.168.1.0/24  
-- Alt Ağ Maskesi: 255.255.255.0
-- CIDR Notasyonu: /24
-- Kullanılabilir IP Aralığı: 192.168.1.1 - 192.168.1.254
-- Broadcast Adresi: 192.168.1.255
-- Toplam Host Sayısı: 254
+IP addresses are classified based on the size and usage of networks. Each class has different address ranges, subnet masks, and calculation methods.
 
-**Ağ:** 10.0.0.0/8  
-- Alt Ağ Maskesi: 255.0.0.0
-- CIDR Notasyonu: /8
-- Kullanılabilir IP Aralığı: 10.0.0.1 - 10.255.255.254
-- Broadcast Adresi: 10.255.255.255
-- Toplam Host Sayısı: 16,777,214
+| Class | Start Address     | End Address       | Subnet Mask           | Number of Networks | Max Hosts per Network  | Use Case               |
+|-------|-------------------|-------------------|------------------------|--------------------|-------------------------|------------------------|
+| A     | 0.0.0.0           | 127.255.255.255   | 255.0.0.0 (/8)         | 128                | 16,777,214              | Large networks         |
+| B     | 128.0.0.0         | 191.255.255.255   | 255.255.0.0 (/16)      | 16,384             | 65,534                  | Medium-sized networks  |
+| C     | 192.0.0.0         | 223.255.255.255   | 255.255.255.0 (/24)    | 2,097,152          | 254                     | Small networks         |
+| D     | 224.0.0.0         | 239.255.255.255   | Not used               | Not applicable     | Not applicable          | Multicast              |
+| E     | 240.0.0.0         | 255.255.255.255   | Not used               | Not applicable     | Not applicable          | Experimental, research |
+
+---
+
+### <div align="center">IP Calculations</div>
+
+#### **Subnet Calculation**
+Subnets are used to divide a block of IP addresses into smaller networks. When subnetting, the network ID and host ID are defined.
+
+**Example:**  
+If a network uses the 192.168.1.0/24 IP block:
+- Subnet Mask: 255.255.255.0  
+- First IP Address (Network ID): 192.168.1.0  
+- Last IP Address (Broadcast): 192.168.1.255  
+- Usable IP Range: 192.168.1.1 - 192.168.1.254 (Total of 254 hosts)
+
+#### **Subnet Mask**
+A subnet mask is used to distinguish the network and host portions of an IP address. CIDR notation (e.g., /24, /16) represents this mask.
+
+**Example:**
+- **/24** Subnet Mask: 255.255.255.0  
+- **/16** Subnet Mask: 255.255.0.0
+
+#### **CIDR Notation**
+CIDR (Classless Inter-Domain Routing) allows for more flexible representation of IP addresses and subnets.
+
+**Example:**  
+192.168.1.0/24 represents 256 IP addresses and has a subnet mask of 255.255.255.0.
+
+#### **Usable IP Count Calculation**
+The number of usable IP addresses in a subnet is calculated with the formula:  
+`Usable IPs = 2^(32 - CIDR) - 2`
+
+**Example:**
+- For /24: 2^(32 - 24) - 2 = 256 - 2 = 254 usable IPs  
+- For /16: 2^(32 - 16) - 2 = 65,536 - 2 = 65,534 usable IPs
+
+#### **Wildcard Mask**
+A wildcard mask is the inverse of a subnet mask and is often used in ACLs (Access Control Lists) and other security configurations.
+
+**Example:**
+- For subnet mask 255.255.255.0, the wildcard mask is: 0.0.0.255
+
+---
+
+### Example Calculations
+
+**Network:** 192.168.1.0/24  
+- Subnet Mask: 255.255.255.0  
+- CIDR Notation: /24  
+- Usable IP Range: 192.168.1.1 - 192.168.1.254  
+- Broadcast Address: 192.168.1.255  
+- Total Hosts: 254
+
+**Network:** 10.0.0.0/8  
+- Subnet Mask: 255.0.0.0  
+- CIDR Notation: /8  
+- Usable IP Range: 10.0.0.1 - 10.255.255.254  
+- Broadcast Address: 10.255.255.255  
+- Total Hosts: 16,777,214
 
 ---
 
